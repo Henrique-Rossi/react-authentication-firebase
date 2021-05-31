@@ -1,0 +1,88 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+
+.nav {
+  height: 60px;
+  width: 100%;
+  background-color: #11162A;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  position: relative;
+  margin-bottom: 5%;
+}
+
+.nav-links {
+  width: 100%;
+  display: inline;
+  float: left;
+  font-size: 18px;
+}
+
+.nav>.nav-links>a {
+  display: inline-block;
+  padding: 13px 10px 13px 10px;
+  text-decoration: none;
+  color: #efefef;
+
+  font-weight: 500;
+}
+
+.nav>.nav-links>a:first-child {
+  font-size: 22px;
+  font-weight: 900;
+  padding: 13px 100px 13px 50px;
+}
+
+.nav>.nav-links>a:nth-child(10) {
+  color: red;
+
+  float: right;
+
+}
+
+.nav>.nav-links>a:nth-child(11) {
+  color: red;
+
+  float: right;
+
+}
+
+.nav>.nav-links>a:hover {
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.nav>#nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+
+  .nav>.nav-links {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+
+  .nav>.nav-links>a {
+    display: block;
+    width: 100%;
+  }
+
+  .nav>#nav-check:not(:checked)~.nav-links {
+    height: 0px;
+  }
+
+  .nav>#nav-check:checked~.nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
