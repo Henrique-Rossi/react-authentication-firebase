@@ -6,7 +6,7 @@
 
 
 .nav {
-  height: 60px;
+  height: 70px;
   width: 100%;
   background-color: #11162A;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
@@ -18,7 +18,7 @@
   width: 100%;
   display: inline;
   float: left;
-  font-size: 18px;
+  font-size: 1vw;
 }
 
 .nav>.nav-links>a {
@@ -31,21 +31,21 @@
 }
 
 .nav>.nav-links>a:first-child {
-  font-size: 22px;
+  font-size: 1.3vw;
   font-weight: 900;
   padding: 13px 100px 13px 50px;
 }
 
 .nav>.nav-links>a:nth-child(10) {
   color: red;
-
-  float: right;
+  margin-top: 0.5%;
+float: right;
 
 }
 
 .nav>.nav-links>a:nth-child(11) {
-  color: red;
-
+  
+  margin-top: 0.5%;
   float: right;
 
 }

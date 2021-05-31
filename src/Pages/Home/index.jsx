@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import "./style.css"
 import { Header } from "../../Components/header"
 export function HomePage() {

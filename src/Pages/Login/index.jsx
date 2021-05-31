@@ -4,7 +4,7 @@ import { Link, useHistory } from "react-router-dom";
 import { UseAuth } from '../../contexts/authContext'
 
 
-export default () => {
+export const Login = () => {
 
     const emailRef = useRef();
     const passwordRef = useRef();
